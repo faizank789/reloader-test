@@ -1,0 +1,12 @@
+apiversion: v1
+kind: PersistentVolume
+metadata:
+  name: prom
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 50Gi
+  nfs:
+    path: /YBDEVOL355GEN/YBDEQTR355GEN
+    server: 10.248.24.230

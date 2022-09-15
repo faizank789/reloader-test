@@ -1,0 +1,10 @@
+apiversion: v1
+kind: PersistentVolumeClaim
+metadata:
+ name: prom
+spec:
+  accessModes:
+  - ReadwriteMany
+  resources:
+    requests:
+      storage: 50Gi
