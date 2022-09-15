@@ -1,0 +1,12 @@
+apiversion: v1
+kind: PersistentVolume
+metadata:
+  name: redis
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 10Gi
+  nfs:
+    path: /YBDEVOL355GEN/YBDEQTR355GEN
+    server: 10.248.24.230
